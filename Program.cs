@@ -110,46 +110,44 @@
 
 // num 7
 
-// int secret = new Random().Next(1, 101);
-// int guess;
-//     Console.Write("Угадайте число от 1 до 100: ");
-// for (int i = 0; i <= 6; i++)
-// {
-//         if (i== 6)
-//     {
-//         Console.WriteLine($"Вы исчерпали все попытки. Загаданное число было: {secret}");
-//         break;
-//     }
-//     guess = Convert.ToInt32(Console.ReadLine());
+int secret = new Random().Next(1, 101);
+int guess;
+    Console.Write("Угадайте число от 1 до 100: ");
+for (int i = 0; i <= 6; i++)
+{
+        if (i== 6)
+    {
+        Console.WriteLine($"Вы исчерпали все попытки. Загаданное число было: {secret}");
+        break;
+    }
+    guess = Convert.ToInt32(Console.ReadLine());
 
-//     if (guess == secret)
-//     {
-//         Console.WriteLine("Вы угадали число. Попыток: " + (i + 1));
-//         break;
-//     }
-//     else if (guess < secret)
-//     {
-//         Console.WriteLine("больше.");
-//     }
-//     else
-//     {
-//         Console.WriteLine("меньше.");
-//     }
-
-
-// }
+    if (guess == secret)
+    {
+        Console.WriteLine("Вы угадали число. Попыток: " + (i + 1));
+        break;
+    }
+    else if (guess < secret)
+    {
+        Console.WriteLine("больше.");
+    }
+    else
+    {
+        Console.WriteLine("меньше.");
+    }
+}
 
 
 // дополнительное задание
 
-Console.Write("Введите число: ");
-int number = Convert.ToInt32(Console.ReadLine());
-int length = Convert.ToString(number).Length;
-int sum = 0;
-for (int i = 0; i < length; i++)
-{
-    sum += number % 10;
-    number /= 10;
-}
-Console.WriteLine($"Сумма цифр числа: {sum}");
-Console.WriteLine($"Количество цифр числа: {length}");
+// Console.Write("Введите число: ");
+// int number = Convert.ToInt32(Console.ReadLine());
+// int length = Convert.ToString(number).Length;
+// int sum = 0;
+// for (int i = 0; i < length; i++)
+// {
+//     sum += number % 10;
+//     number /= 10;
+// }
+// Console.WriteLine($"Сумма цифр числа: {sum}");
+// Console.WriteLine($"Количество цифр числа: {length}");
